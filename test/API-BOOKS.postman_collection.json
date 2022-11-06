@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "15fe415b-eaf5-40e1-b710-5499c3e16899",
+		"name": "APi-BOOKS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Books by ISBN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\":[\"9781603095020\",\"9781603094542\",\"9781603094924\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/search",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search Books by ISBN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isbn\":[\"9781603095020\",\"9781603094542\",\"9781603094924\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 06 Nov 2022 21:22:56 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "1963"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ISBN:9781603095020\": {\n            \"url\": \"https://openlibrary.org/books/OL33884527M/Animal_Stories\",\n            \"key\": \"/books/OL33884527M\",\n            \"title\": \"Animal Stories\",\n            \"authors\": [\n                {\n                    \"url\": \"https://openlibrary.org/authors/OL7539670A/Peter_Hoey\",\n                    \"name\": \"Peter Hoey\"\n                },\n                {\n                    \"url\": \"https://openlibrary.org/authors/OL9564958A/Maria_Hoey\",\n                    \"name\": \"Maria Hoey\"\n                }\n            ],\n            \"number_of_pages\": 176,\n            \"identifiers\": {\n                \"isbn_10\": [\n                    \"1603095020\"\n                ],\n                \"isbn_13\": [\n                    \"9781603095020\"\n                ],\n                \"openlibrary\": [\n                    \"OL33884527M\"\n                ]\n            },\n            \"publishers\": [\n                {\n                    \"name\": \"Top Shelf Productions\"\n                }\n            ],\n            \"publish_date\": \"Jan 11, 2022\",\n            \"cover\": {\n                \"small\": \"https://covers.openlibrary.org/b/id/11996522-S.jpg\",\n                \"medium\": \"https://covers.openlibrary.org/b/id/11996522-M.jpg\",\n                \"large\": \"https://covers.openlibrary.org/b/id/11996522-L.jpg\"\n            }\n        }\n    },\n    {\n        \"ISBN:9781603094542\": {\n            \"url\": \"https://openlibrary.org/books/OL28719445M/Cosmoknights_(Book_One)\",\n            \"key\": \"/books/OL28719445M\",\n            \"title\": \"Cosmoknights (Book One)\",\n            \"authors\": [\n                {\n                    \"url\": \"https://openlibrary.org/authors/OL8121490A/Hannah_Templer\",\n                    \"name\": \"Hannah Templer\"\n                }\n            ],\n            \"number_of_pages\": 216,\n            \"identifiers\": {\n                \"isbn_13\": [\n                    \"9781603094542\"\n                ],\n                \"openlibrary\": [\n                    \"OL28719445M\"\n                ]\n            },\n            \"classifications\": {\n                \"lc_classifications\": [\n                    \"\"\n                ]\n            },\n            \"publishers\": [\n                {\n                    \"name\": \"Idea & Design Works, LLC\"\n                }\n            ],\n            \"publish_date\": \"2019\"\n        }\n    },\n    {\n        \"ISBN:9781603094924\": {\n            \"url\": \"https://openlibrary.org/books/OL33884567M/The_Delicacy\",\n            \"key\": \"/books/OL33884567M\",\n            \"title\": \"The Delicacy\",\n            \"authors\": [\n                {\n                    \"url\": \"https://openlibrary.org/authors/OL7632753A/James_Albon\",\n                    \"name\": \"James Albon\"\n                }\n            ],\n            \"number_of_pages\": 320,\n            \"identifiers\": {\n                \"isbn_10\": [\n                    \"160309492X\"\n                ],\n                \"isbn_13\": [\n                    \"9781603094924\"\n                ],\n                \"openlibrary\": [\n                    \"OL33884567M\"\n                ]\n            },\n            \"classifications\": {\n                \"lc_classifications\": [\n                    \"PN6737\"\n                ]\n            },\n            \"publishers\": [\n                {\n                    \"name\": \"Top Shelf Productions\"\n                }\n            ],\n            \"publish_date\": \"Jun 08, 2021\",\n            \"subjects\": [\n                {\n                    \"name\": \"Literature\",\n                    \"url\": \"https://openlibrary.org/subjects/literature\"\n                }\n            ],\n            \"cover\": {\n                \"small\": \"https://covers.openlibrary.org/b/id/11996561-S.jpg\",\n                \"medium\": \"https://covers.openlibrary.org/b/id/11996561-M.jpg\",\n                \"large\": \"https://covers.openlibrary.org/b/id/11996561-L.jpg\"\n            }\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\":\"9781612394542\",\n    \"title\": \"Test Book\",\n    \"authors\": [\"Guillermo Lujan\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Books",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isbn\":\"9781612394542\",\n    \"title\": \"Test Book\",\n    \"authors\": [\"Guillermo Lujan\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 06 Nov 2022 21:23:44 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "152"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"isbn\": \"9781612394542\",\n    \"title\": \"Test Book\",\n    \"authors\": [\n        {\n            \"name\": \"Guillermo Lujan\"\n        }\n    ],\n    \"comments\": [],\n    \"created_at\": \"2022-11-06T21:23:45.350965+00:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/books",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 06 Nov 2022 21:24:19 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "1290"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"isbn\": \"9781603095020\",\n        \"title\": \"Animal Stories\",\n        \"authors\": [\n            {\n                \"name\": \"Peter Hoey\"\n            }\n        ],\n        \"comments\": [],\n        \"created_at\": \"2022-11-06T19:31:19.505461+00:00\"\n    },\n    {\n        \"id\": 2,\n        \"isbn\": \"9781603095020\",\n        \"title\": \"Animal Stories\",\n        \"authors\": [\n            {\n                \"name\": \"Peter Hoey\"\n            }\n        ],\n        \"comments\": [\n            {\n                \"id_book\": 2,\n                \"comment\": \"bluadasdsadasdasdsa blu blu\",\n                \"created_at\": \"2022-11-06T19:38:08.559376+00:00\"\n            },\n            {\n                \"id_book\": 2,\n                \"comment\": \"99999 blu blu\",\n                \"created_at\": \"2022-11-06T19:40:13.996011+00:00\"\n            }\n        ],\n        \"created_at\": \"2022-11-06T19:32:08.966612+00:00\"\n    },\n    {\n        \"id\": 3,\n        \"isbn\": \"9781603095020\",\n        \"title\": \"Animal Stories\",\n        \"authors\": [\n            {\n                \"name\": \"Peter Hoey\"\n            }\n        ],\n        \"comments\": [],\n        \"created_at\": \"2022-11-06T19:32:43.650346+00:00\"\n    },\n    {\n        \"id\": 4,\n        \"isbn\": \"9781603094542\",\n        \"title\": \"Cosmoknights (Book One)\",\n        \"authors\": [\n            {\n                \"name\": \"Hannah Templer\"\n            }\n        ],\n        \"comments\": [],\n        \"created_at\": \"2022-11-06T19:39:52.372469+00:00\"\n    },\n    {\n        \"id\": 5,\n        \"isbn\": \"9781603094542\",\n        \"title\": \"Cosmoknights (Book One)\",\n        \"authors\": [\n            {\n                \"name\": \"Hannah Templer\"\n            }\n        ],\n        \"comments\": [],\n        \"created_at\": \"2022-11-06T21:06:11.182039+00:00\"\n    },\n    {\n        \"id\": 6,\n        \"isbn\": \"9781612394542\",\n        \"title\": \"totitolandas\",\n        \"authors\": [\n            {\n                \"name\": \"Guillermo Lujan\"\n            }\n        ],\n        \"comments\": [],\n        \"created_at\": \"2022-11-06T21:06:48.246025+00:00\"\n    },\n    {\n        \"id\": 7,\n        \"isbn\": \"9781612394542\",\n        \"title\": \"Test Book\",\n        \"authors\": [\n            {\n                \"name\": \"Guillermo Lujan\"\n            }\n        ],\n        \"comments\": [],\n        \"created_at\": \"2022-11-06T21:23:45.350965+00:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"comment\": \"ljashdlsad aosdbas labdhkavsd blu blu\",\n    \"id_book\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/comments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Comments",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\": \"ljashdlsad aosdbas labdhkavsd blu blu\",\n    \"id_book\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/comments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 06 Nov 2022 21:25:08 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "111"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id_book\": 2,\n    \"comment\": \"ljashdlsad aosdbas labdhkavsd blu blu\",\n    \"created_at\": \"2022-11-06T21:25:09.769690+00:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Comments",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/comments/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Comments",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/comments/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"comments",
+								"2"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 06 Nov 2022 21:25:32 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Modify Comment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"comment\": \"99999 blu blu\",\n    \"id_book\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/comments/3",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"comments",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Modify Comment",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\": \"99999 blu blu\",\n    \"id_book\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/comments/3",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"comments",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 06 Nov 2022 21:26:04 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "94"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"created_at\": \"2022-11-06T19:40:13.996011+00:00\",\n    \"comment\": \"99999 blu blu\",\n    \"id\": 3,\n    \"id_book\": 2\n}"
+				}
+			]
+		}
+	]
+}
