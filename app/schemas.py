@@ -8,6 +8,7 @@ class Isbn(BaseModel):
 
 
 class CommentsBase(BaseModel):
+    id:int
     id_book: int
     comment: str
     created_at: datetime = None
